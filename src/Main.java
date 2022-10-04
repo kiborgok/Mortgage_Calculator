@@ -8,12 +8,20 @@ public class Main {
         float annualInterestRate = (float) readValue("Annual Interest Rate: ", 1, 30);
         byte years = (byte) readValue("Period (years): ", 1, 30);
 
+        printMortgage(principal, annualInterestRate, years);
+
+        printPaymentSchedule(principal, annualInterestRate, years);
+    }
+
+    private static void printMortgage(int principal, float annualInterestRate, byte years) {
         double mortgage = calculateMortgage(principal, annualInterestRate, years);
         System.out.println();
         System.out.println("MORTGAGE");
         System.out.println("--------");
         System.out.println("Monthly Payments: " + NumberFormat.getCurrencyInstance().format(mortgage));
+    }
 
+    private static void printPaymentSchedule(int principal, float annualInterestRate, byte years) {
         System.out.println();
         System.out.println("PAYMENT SCHEDULE");
         System.out.println("----------------");
