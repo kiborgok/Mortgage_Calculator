@@ -2,9 +2,9 @@
 
 ##OUTPUT EXAMPLE
 
-Principal: 100000
-Annual Interest Rate: 5
-Period (years): 3
+* Principal: 100000
+* Annual Interest Rate: 5
+* Period (years): 3
 
 MORTGAGE
 --------
